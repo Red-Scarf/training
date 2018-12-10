@@ -4,6 +4,9 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+/**
+ * 反射，JDK动态代理
+ */
 public class JdkProxyExample implements InvocationHandler {
     // 真实对象
     private Object target = null;
@@ -40,6 +43,7 @@ public class JdkProxyExample implements InvocationHandler {
         // 绑定关系，因为挂在接口HelloWorld下，所以声明代理对象HW proxy
         HelloWorld proxy = (HelloWorld)jdk.bind(new HelloWorldImpl());
         // 此时HelloWorld已经是一个代理对象，会进入代理的逻辑方法invoke里
+        proxy.setName("dzy");
         proxy.sayHelloWorld();
     }
 
