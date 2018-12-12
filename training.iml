@@ -21,10 +21,19 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://F:/dzy date/资料/大4四达内实训资料/JDBC/jdbc-jar包/jdbc-jar包/ojdbc6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://F:/dzy date/资料/SSM框架/mybatis-3.4.6/mybatis-3.4.6.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
